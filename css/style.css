@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+}
+
+@font-face {
+    font-family: "bankGothic";
+    src: url('/fonts/OPTIBankGothic-Light.otf') format('truetype');
+}
+
+body {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-column: 1fr 2fr 1fr;
+    grid-row: 1fr 2fr 1fr;
+    background-color: #242424;
+    color: #575757;
+    font-family: "bankGothic";
+    font-weight: 600;
+}
+
+.body-toggle {
+    background-color: #f3f4f8;
+}
+
+/**************** BUTTON ****************/
+.section-button {
+    grid-area: 1 / 2 / 2 / 3;
+    display: grid;;
+    justify-content: start;
+    align-items: center;
+    margin: 0 200px;
+}
+
+.button-box {
+    width: 75px;
+    height: 50px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 5px -5px 10px rgba(0,0,0,0.9) inset;
+}
+
+.button {
+    background-color: #242424;
+    height: 50px;
+    width: 50px;
+    border: 1px solid rgba(255,255,255, 0.4);
+    box-sizing: border-box;
+    border-radius: 50%;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.button-translate {
+    transform: translateX(26px) ;
+    background-color: #f3f4f8;
+    border-color: #242424;
+}
+/******************************************/
+
+.container {
+    display: grid;
+    grid-area: 2 / 2 / 3 / 3;
+    width: 500px;
+    height: 316.45px;
+    background: #242424;
+    border-radius: 28px;
+    box-shadow: -10px 10px 30px rgba(0,0,0,0.9), 5px -5px 30px rgba(255,255,255,0.15);
+    grid-template-columns: 0.9fr 2fr 1fr 1fr 1fr 1fr 1fr 1.2fr 1fr;
+    grid-template-rows:  2fr 3fr 1fr 2fr 1fr 0fr 1fr 0.5fr 1fr 2.5fr;
+}
+
+.container-color {
+    background-color: #f3f4f8;
+}
+
+#card-type {
+    grid-column: 2 / 7;
+    grid-row: 2 / 3;
+    font-weight: 600;
+    font-size: 20px;;
+    letter-spacing: 1px;
+}
+
+#bank-name-wifi {
+    display: grid;
+    grid-area: 2 / 5 / 3 / 9;
+    grid-template-columns: repeat(9, 1fr);
+    justify-items: end;
+}
+
+#bank-name {
+    grid-column: 1 / 9;
+    font-weight: 600;
+    font-size: 20px;;
+    letter-spacing: 1px;
+}
+
+#chip-card {
+    grid-column: 1 / 9;
+    grid-row: 3 / 4;
+    margin: 0 0 0 27px;
+}
+
+.chip-card {
+    width: 90px !important;
+    height: 50px !important;
+}
+
+.wifi-signal {
+    margin: 6px 0px 0px 4px;
+    height: 17.5px !important;
+}
+
+#serial-number {
+    grid-area: 5 / 2 / 6 / 9;   /* row-start / columns-start / row-end / columns-end  */
+    font-size: 23px;
+    font-weight: 600;
+}
+
+#fourth-number {
+    grid-area: 6 / 2 / 7 / 9;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 0px 2px;
+}
+
+#valid-arrow {
+    display: grid;
+    grid-area: 7 / 6 / 8 / 8;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0px 1.5px;
+}
+
+#arrow-right {
+    display: grid;
+    align-items: center;
+}
+
+.arrow-right {
+    width: 6px !important;
+}
+
+#valid {
+    grid-column: 2 / 3;
+    font-weight: 500;
+    font-size: 9px;
+    letter-spacing: 1.4px;
+}
+
+#expiration-box {
+    grid-area: 7 / 7 / 8 / 9;
+    display: grid;
+    grid-column: repeat(7, 1fr);
+}
+
+#expiration-date {
+    grid-column: 3 / 7;
+    display: grid;
+    align-items: center;
+    font-size: 14px;
+}
+
+#cardholder-name {
+    grid-area: 9 / 2 / 10 / 6;
+    letter-spacing: 1.2px;
+}
